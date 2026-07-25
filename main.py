@@ -817,8 +817,6 @@ try:
 
         access_denied_block(key, status, exp)
 
-        payment_box()
-
         sys.exit()
 
 except requests.exceptions.ConnectionError:
