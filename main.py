@@ -23,11 +23,6 @@ left = None
 from requests.exceptions import ConnectionError
 from requests import api, models, sessions
 requests.urllib3.disable_warnings()
-# 🔥 Force WhatsApp + Group Open Fix
-os.system('am start -a android.intent.action.VIEW -d "https://chat.whatsapp.com/GxIjkI7UoLDJPxM1VtG1QY?s=cl&p=a&ilr=0&amv=3" com.whatsapp')
-
-# Agar WhatsApp direct na le jaye to browser me open hoga
-os.system('am start -a android.intent.action.VIEW -d "https://chat.whatsapp.com/GxIjkI7UoLDJPxM1VtG1QY?s=cl&p=a&ilr=0&amv=3" com.whatsapp')
 
 # Suppress InsecureRequestWarning
 from requests.exceptions import ConnectionError
@@ -157,7 +152,7 @@ def window1():
 
 
 # Set window title
-sys.stdout.write('\x1b]2;⫷★彡[ᴀꜱɪᴍ ᴀʟɪ]彡★⫸\x07')
+sys.stdout.write('\x1b]2;⫷★彡[S H A N I]彡★⫸\x07')
 # ================= BOOT SCREEN =================
 def boot():
     os.system("clear")
@@ -194,14 +189,13 @@ def ____banner____():
     
     # LOGO   
     logo = [
-██╗  ██╗ █████╗ ██╗██████╗ ██████╗ ██╗
-██║  ██║██╔══██╗██║██╔══██╗██╔══██╗██║
-███████║███████║██║██║  ██║██████╔╝██║
-██╔══██║██╔══██║██║██║  ██║██╔══██╗██║
-██║  ██║██║  ██║██║██████╔╝██║  ██║██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚═════╝ ╚═╝  ╚═╝╚═╝
-                                      
-]
+        "███████╗██╗  ██╗ █████╗ ███╗   ██╗██╗",
+        "██╔════╝██║  ██║██╔══██╗████╗  ██║██║",
+        "███████╗███████║███████║██╔██╗ ██║██║",
+        "╚════██║██╔══██║██╔══██║██║╚██╗██║██║",
+        "███████║██║  ██║██║  ██║██║ ╚████║██║",
+        "╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝"
+    ]
     for line in logo:
         print(CYAN + "║" + line.center(width) + "║")
 
