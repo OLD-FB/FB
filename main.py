@@ -212,7 +212,7 @@ def ____banner____():
     print(f"{CYAN}➢ Device Key : {CYAN}{user_key if user_key else 'LOADING...'}{RESET}")
     print(f"{CYAN}➢ Expiry     : {GREEN}{exp if exp else 'N/A'}{RESET}")
     print(f"{CYAN}➢ Time Left  : {GREEN}{left if left else 'N/A'}{RESET}")
-    print(CYAN + "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" + RESET)
+    print(CYAN + "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" + RESET)
 if __name__ == "__main__":
     ____banner____()
 def creationyear(uid):
