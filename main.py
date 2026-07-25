@@ -798,36 +798,6 @@ def access_denied_block(key, status, exp=None):
 
         print("\033[1;91mYOUR KEY IS NOT APPROVED ✖\033[0m")
 
-# ================= PAYMENT BOX =================
-def payment_box():
-
-    print("\n\033[1;92m╔══════════════════════════════════════╗\033[0m")
-    print("\033[1;92m║ T O O L = O W N E R   H A I D R I       ║\033[0m")
-    print("\033[1;92m╠══════════════════════════════════════╣\033[0m")
-    print("\033[1;92m║  SADA PAY NO: 03060725589           ║\033[0m")
-    print("\033[1;92m║  SADA PAY NM: MUHAMMAD SAFDAR          ║\033[0m")
-    print("\033[1;92m╠══════════════════════════════════════╣\033[0m")
-    print("\033[1;92m║  ESYPASA NO : 03060725589           ║\033[0m")
-    print("\033[1;92m║  ESYPASA NM : MUHAMMAD SAFDAR         ║\033[0m")
-    print("\033[1;92m╠══════════════════════════════════════╣\033[0m")
-    print("\033[1;92m║  3 DAYS   : 300 PKR                  ║\033[0m")
-    print("\033[1;92m║  7 DAYS   : 650 PKR                  ║\033[0m")
-    print("\033[1;92m║  30 DAYS  : 1300 PKR                  ║\033[0m")
-    print("\033[1;92m╚══════════════════════════════════════╝\033[0m")
-
-    print(f"\n{G}Press Enter To Send Message To Admin{W}")
-
-    input()
-
-    msg = (
-        f"Dear Admin, Please Approve My Key To Premium Thanks%0A%0A"
-        f"Key : {user_key}"
-    )
-
-    os.system(
-        f'am start -a android.intent.action.VIEW -d "https://wa.me/923060725589?text={msg}"'
-    )
-
 # ─────────────────────────────
 # 🚀 START
 # ─────────────────────────────
